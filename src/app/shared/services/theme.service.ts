@@ -83,8 +83,8 @@ export class ThemeService {
     }
 
     applyTheme(theme?: string) {
-
-        theme = theme || window.localStorage[this.storageKey] || "orange.light";
+        //purple.dark  purple.light
+        theme = theme || window.localStorage[this.storageKey] || "purple.light";
         this.applyBaseTheme(theme)
 
         let accent = theme?.substring(theme?.indexOf('.')+1)
@@ -100,8 +100,8 @@ export class ThemeService {
 
     switchTheme() {
       console.log("current theme", this.getTheme());
-
-      const newTheme = this.getTheme() === 'dark' ? 'light' : 'dark';
+      //dark | light
+      const newTheme = this.getTheme() === 'purple.dark' ? 'purple.light' : 'purple.dark';
       this.applyTheme(newTheme);
     }
 
