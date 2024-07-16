@@ -61,7 +61,9 @@
               "src/themes/generated/theme.base.css",
               "src/themes/generated/theme.additional.css",
               "src/dx-styles.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              { "input": "node_modules/devextreme/dist/css/dx.material.purple.light.css", "bundleName": "dx.theme.material.purple.light" },
+              { "input": "node_modules/devextreme/dist/css/dx.material.purple.dark.css", "bundleName": "dx.theme.material.purple.dark" }
             ],
             "scripts": []
           },
